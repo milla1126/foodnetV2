@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/menu/pom.xml" />
+        <option value="$PROJECT_DIR$/cuenta/pom.xml" />
+        <option value="$PROJECT_DIR$/pedido/pom.xml" />
+        <option value="$PROJECT_DIR$/cliente/pom.xml" />
+        <option value="$PROJECT_DIR$/propina/pom.xml" />
+        <option value="$PROJECT_DIR$/producto/pom.xml" />
+        <option value="$PROJECT_DIR$/inventario/pom.xml" />
+        <option value="$PROJECT_DIR$/trabajador/pom.xml" />
+        <option value="$PROJECT_DIR$/reporte-venta/pom.xml" />
+        <option value="$PROJECT_DIR$/reporte-sueldo/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
