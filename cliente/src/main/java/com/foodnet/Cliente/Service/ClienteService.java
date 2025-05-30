@@ -1,11 +1,10 @@
 package com.foodnet.Cliente.Service;
 
 
-import com.foodnet.Cliente.cl.Foodnet.model.Cliente;
-import com.foodnet.Cliente.cl.Foodnet.repository.ClienteRepository;
+import com.foodnet.Cliente.Model.Cliente;
+import com.foodnet.Cliente.Repository.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 

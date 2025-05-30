@@ -2,6 +2,7 @@ package com.foodnet.Cliente.Controller;
 
 
 import com.foodnet.Cliente.Model.Cliente;
+import com.foodnet.Cliente.Service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
