@@ -1,8 +1,3 @@
-package com.foodnet.Cuenta.Controller;
-
-
-import com.foodnet.Cuenta.Model.Cuenta;
-import com.foodnet.Cuenta.Service.CuentaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +5,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/cuentas")
 public class CuentaController {
 
     @Autowired
@@ -38,4 +32,3 @@ public class CuentaController {
         cuentaService.eliminarCuenta(id);
     }
 }
-

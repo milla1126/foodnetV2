@@ -1,8 +1,3 @@
-package com.foodnet.Cuenta.Service;
-
-
-import com.foodnet.Cuenta.Model.Cuenta;
-import com.foodnet.Cuenta.Repository.CuentaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +5,6 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-
 public class CuentaService {
 
     @Autowired

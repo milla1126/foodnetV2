@@ -1,8 +1,8 @@
 package com.foodnet.Inventario.Controller;
 
 
-import com.Foodnet.cl.Foodnet.model.Inventario;
-import com.Foodnet.cl.Foodnet.service.InventarioService;
+import com.foodnet.Inventario.Model.Inventario;
+import com.foodnet.Inventario.Service.InventarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
