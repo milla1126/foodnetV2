@@ -1,6 +1,5 @@
 package com.foodnet.Inventario.Service;
 
-
 import com.Foodnet.cl.Foodnet.model.Inventario;
 import com.Foodnet.cl.Foodnet.repository.InventarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;

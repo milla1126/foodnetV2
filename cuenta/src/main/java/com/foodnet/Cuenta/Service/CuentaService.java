@@ -1,7 +1,3 @@
-package com.Foodnet.cl.Foodnet.service;
-
-import com.Foodnet.cl.Foodnet.model.Cuenta;
-import com.Foodnet.cl.Foodnet.repository.CuentaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,3 @@
-package com.Foodnet.cl.Foodnet.controller;
-
-import com.Foodnet.cl.Foodnet.model.Cliente;
-import com.Foodnet.cl.Foodnet.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

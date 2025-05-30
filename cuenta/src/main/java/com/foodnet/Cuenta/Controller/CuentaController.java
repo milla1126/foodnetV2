@@ -1,7 +1,3 @@
-package com.Foodnet.cl.Foodnet.controller;
-
-import com.Foodnet.cl.Foodnet.model.Cuenta;
-import com.Foodnet.cl.Foodnet.service.CuentaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -9,7 +5,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/Cuentas")
 public class CuentaController {
 
     @Autowired
