@@ -1,7 +1,7 @@
 package com.foodnet.Inventario.Repository;
 
 
-import com.Foodnet.cl.Foodnet.model.Inventario;
+import com.foodnet.Inventario.Model.Inventario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
