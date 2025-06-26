@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/trabajadores")
+@RequestMapping("/api/v2/trabajadores")
 public class TrabajadorController {
 
     @Autowired
@@ -25,6 +25,11 @@ public class TrabajadorController {
         return trabajadorService.obtenerTrabajador(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @PutMapping("/{id}")
+    public Trabajador actualizar(@PathVariable Integer id, @RequestBody Trabajador trabajador) {
+        return trabajadorService.guardarTrabajador(trabajador);
     }
 
     @PostMapping

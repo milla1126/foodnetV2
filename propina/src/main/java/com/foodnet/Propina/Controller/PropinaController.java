@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/propinas")
+@RequestMapping("/api/v2/propinas")
 public class PropinaController {
 
     @Autowired
@@ -25,6 +25,11 @@ public class PropinaController {
         return propinaService.obtenerPropina(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @PutMapping("/{id}")
+    public Propina actualizar(@PathVariable Integer id, @RequestBody Propina propina) {
+        return propinaService.guardarPropina(propina);
     }
 
     @PostMapping

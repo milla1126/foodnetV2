@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/reportes-venta")
+@RequestMapping("/api/v2/reportes-venta")
 public class ReporteVentaController {
 
     @Autowired
@@ -25,6 +25,11 @@ public class ReporteVentaController {
         return reporteVentaService.obtenerReporte(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @PutMapping("/{id}")
+    public ReporteVenta actualizar(@PathVariable Integer id, @RequestBody ReporteVenta reporteVenta) {
+        return reporteVentaService.guardarReporte(reporteVenta);
     }
 
     @PostMapping

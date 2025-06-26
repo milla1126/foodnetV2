@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/productos")
+@RequestMapping("/api/v2/productos")
 public class ProductoController {
     private final ProductoService productoService;
 
@@ -26,6 +26,11 @@ public class ProductoController {
         return productoService.obtenerProducto(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @PutMapping("/{id}")
+    public ProductoModel actualizar(@PathVariable Long id, @RequestBody ProductoModel producto) {
+        return productoService.guardarProducto(producto);
     }
 
     @PostMapping

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/cuentas")
+@RequestMapping("/api/v2/cuentas")
 public class CuentaController {
 
     @Autowired
@@ -26,6 +26,11 @@ public class CuentaController {
         return cuentaService.obtenerCuenta(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @PutMapping("/{id}")
+    public Cuenta actualizar(@PathVariable Integer id, @RequestBody Cuenta cuenta) {
+        return cuentaService.guardarCuenta(cuenta);
     }
 
     @PostMapping
