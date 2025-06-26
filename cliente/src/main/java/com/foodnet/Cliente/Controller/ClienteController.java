@@ -33,6 +33,11 @@ public class ClienteController {
         return clienteService.guardarCliente(cliente);
     }
 
+    @PutMapping("/{id}")
+    public Cliente actualizar(@PathVariable Integer id, @RequestBody Cliente cliente) {
+        return clienteService.guardarCliente(cliente);
+    }
+
     @DeleteMapping("/{id}")
     public void eliminar(@PathVariable Integer id) {
         clienteService.eliminarCliente(id);
