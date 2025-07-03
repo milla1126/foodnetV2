@@ -27,10 +27,10 @@ public class ClienteControllerV2 {
 
     @GetMapping(produces = MediaTypes.HAL_JSON_VALUE)
     public CollectionModel<EntityModel<Cliente>> getAllClientes() {
-        List<EntityModel<Cliente>> carreras = clienteService.listarClientes().stream()
+        List<EntityModel<Cliente>> cliente = clienteService.listarClientes().stream()
                 .map(assembler::toModel)
                 .collect(Collectors.toList());
-        return CollectionModel.of(carreras,
+        return CollectionModel.of(cliente,
                 linkTo(methodOn(ClienteControllerV2.class).getAllClientes()).withSelfRel());
     }
     @GetMapping(value = "/{id}", produces = MediaTypes.HAL_JSON_VALUE)
