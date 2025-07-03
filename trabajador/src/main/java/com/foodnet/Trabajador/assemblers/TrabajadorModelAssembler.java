@@ -16,6 +16,6 @@ public class TrabajadorModelAssembler implements RepresentationModelAssembler<Tr
     public EntityModel<Trabajador> toModel(Trabajador trabajador) {
         return EntityModel.of(trabajador,
                 linkTo(methodOn(TrabajadorControllerV2.class).getTrabajadorById(trabajador.getId_trabajador())).withSelfRel(),
-                linkTo(methodOn(TrabajadorControllerV2.class).getAllTrabajador()).withRel("clientes"));
+                linkTo(methodOn(TrabajadorControllerV2.class).getAllTrabajador()).withRel("trabajadores"));
     }
 }
